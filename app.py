@@ -6,7 +6,7 @@ app = Flask(__name__)
 #home endpoint
 @app.route('/')
 def home():
-    return jsonify(data='My MLE02 Home Page - Welcome!!!!')
+    return jsonify(data='My MLE02 Home Page - Welcome to the New SITE!!!!')
 
 if __name__ == '__main__':
     # basically saying if this is being importe then the app wont run

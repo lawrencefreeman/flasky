@@ -8,5 +8,7 @@ RUN pip install -r /code/requirements.txt
 
 COPY app.py /code/
 
+EXPOSE 5000
+
 CMD ["python","/code/app.py"]
 
