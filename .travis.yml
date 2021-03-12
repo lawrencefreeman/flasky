@@ -1,0 +1,12 @@
+language: python
+
+
+services:
+  - docker
+
+
+before_install:
+  - docker image build -t lorrenzofreemano/flasky:v0 .
+  - echo "$dhpwd" | docker login -u "$dhuser" --password-stdin
+  - docker image push lorrenzofreemano/flasky:v0
+
